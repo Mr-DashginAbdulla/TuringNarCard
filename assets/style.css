@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #242424;
+  color: white;
+}
+
+.flex-display {
+  display: flex;
+}
+.cards-row {
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1248px;
+  margin: 10% auto;
+  font-family: "Poppins", serif;
+}
+
+.col-4 {
+  width: calc(100% / 12 * 4);
+}
+.p-2 {
+  padding: 0.5rem;
+}
+
+.card {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #333132;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-price {
+  background-color: #d74163;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.price {
+  gap: 7px;
+  text-align: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 105px;
+  padding: 8px 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.4);
+
+  #price-num {
+    font-size: 2rem;
+  }
+  div {
+    font-size: 10px;
+  }
+}
+
+.about-tarif {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px 20px 10px 20px;
+
+  div {
+    gap: 10px;
+  }
+
+  .balance {
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 5px;
+    margin: 1px 0 20px 0;
+
+    .balance-line {
+      width: 40%;
+      background-color: #e60050;
+      height: 100%;
+    }
+    .internet-line {
+      width: 50%;
+      background-color: #e60050;
+      height: 100%;
+    }
+  }
+}
+
+.info-tarif {
+  flex-wrap: wrap;
+  padding: 0 10px;
+  gap: 10px;
+
+  .cevir,
+  .dont-burn {
+    background-color: #58595c;
+    width: 100%;
+    padding: 20px 10px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+}
+
+.button {
+  border-radius: 20px;
+  border: 1px solid white;
+  justify-content: center;
+  transition: background-color 0.3s;
+  padding: 15px 20px;
+  margin: 20px;
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    background-color: #d74163;
+  }
+}
+
+#full-15-balance {
+  width: 60%;
+  background-color: #e60050;
+  height: 100%;
+}
+
+#full-15-internet {
+  width: 50%;
+  background-color: #e60050;
+  height: 100%;
+}
+
+#cavanNar-balance,
+#cavanNar-internet {
+  width: 80%;
+  background-color: #e60050;
+  height: 100%;
+}
+
+.cavanNar-info{
+  background-color: #58595c;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 10px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.cavanNar-info > div{
+  gap: 10px;
+  align-items: center;
+}
