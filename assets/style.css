@@ -43,6 +43,10 @@ h1 {
   background-color: #333132;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease;
+
+  &:hover{
+  transform: translateY(-10px);
 }
 
 .main-price {
